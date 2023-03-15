@@ -1,0 +1,42 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+       // gradlePluginPortal()
+        maven { url 'https://jitpack.io' }
+        maven() {
+            url 'https://maven.aliyun.com/repository/jcenter'
+        }
+        maven(){
+            url 'https://maven.aliyun.com/repository/google'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/mapr-public'
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven() {
+            url 'https://maven.aliyun.com/repository/jcenter'
+        }
+        maven(){
+            url 'https://maven.aliyun.com/repository/google'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/mapr-public'
+        }
+    }
+}
+rootProject.name = "OpenAi"
+include ':app'
